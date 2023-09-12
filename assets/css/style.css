@@ -1,0 +1,65 @@
+#porto{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: white;
+}
+
+.jumbotron{
+    text-align: center;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    margin: auto;
+    padding: 7rem!important;
+    color: black;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.jumbotron h2{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #eee;
+    display: block;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+#port{
+    background-color: white;
+}
+
+.footer-span{
+    float: right;
+}
+
+#main{
+    background-color: white;
+    padding-top: 1rem;
+    border-radius: 10px;
+}
+
+#main-1{
+    border: none;
+    background-color: white;
+}
+
+#main-2{
+    border: none;
+    background-color: white;
+    padding-left: 50px;
+}
+
+.head{
+    width: 150px;
+    font-weight: bold;
+}
+
+.vr{
+    height: 150px;
+}
+
+.form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
