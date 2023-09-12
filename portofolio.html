@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portofolio | Assignment I</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    body{
+      background-color: #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="porto">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse me-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portofolio.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portofolio.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portofolio.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portofolio.html">My Inventory</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+
+  <div class="container" id="main">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card mb-3" style="max-width: 540px;" id="main-1">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/img/profile.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" id="displayName">Syifa Shintawati</h5>
+                <p class="card-text"><small class="text-body-secondary" id="displayRole">Back End Developer</small></p>
+                <a href="#" class="btn btn-primary btn-sm">Edit </a>
+                <a href="#" class="btn btn-outline-success btn-sm">Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8 d-flex">
+        <div class="vr"></div>
+        <div class="card w-80 mb-1" id="main-2">
+          <div class="card-body">
+            <table>
+              <tr>
+                <td class="head">Availability</td>
+                <td id="displayAvail">Full Time</td>
+              </tr>
+              <tr>
+                <td class="head">Usia</td>
+                <td id="displayUmur">21 Tahun</td>
+              </tr>
+              <tr>
+                <td class="head">Lokasi</td>
+                <td id="displayLoc">Bandung, Indonesia</td>
+              </tr>
+              <tr>
+                <td class="head">Pengalaman</td>
+                <td id="displayYear">3 Tahun</td>
+              </tr>
+              <tr>
+                <td class="head">Email</td>
+                <td id="displayEmail">syifasintawati@gmail.com</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+
+  <div class="container">
+   <div class="form">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="name" aria-describedby="name">
+      </div>
+      <div class="mb-3">
+        <label for="role" class="form-label">Role</label>
+        <input type="text" class="form-control" id="role" aria-describedby="role">
+      </div>
+      <div class="mb-3">
+        <label for="avail" class="form-label">Availability</label>
+        <input type="text" class="form-control" id="avail" aria-describedby="avail">
+      </div>
+      <div class="mb-3">
+        <label for="umur" class="form-label">Umur</label>
+        <input type="text" class="form-control" id="umur" aria-describedby="umur">
+      </div>
+      <div class="mb-3">
+        <label for="loc" class="form-label">Lokasi</label>
+        <input type="text" class="form-control" id="loc" aria-describedby="loc">
+      </div>
+      <div class="mb-3">
+        <label for="yerp" class="form-label">Years Experience</label>
+        <input type="text" class="form-control" id="yerp" aria-describedby="yerp">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" aria-describedby="email">
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-success" onclick="submit()" type="button">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+
+  <footer id="port">
+    <div class="container">
+      © 2020 PTP Dev Team. All right reserved.
+      <span class="footer-span">Develop By Syifa Shintawati Nurazizah</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+    <script>
+      var getName = document.getElementById("name");
+      var getRole = document.getElementById("role");
+      var getAvail = document.getElementById("avail");
+      var getUmur = document.getElementById("umur");
+      var getLoc = document.getElementById("loc");
+      var getYear = document.getElementById("yerp");
+      var getEmail = document.getElementById("email");
+      
+      function submit() {
+        displayName.innerText = getName.value;
+        displayRole.innerText = getRole.value;
+        displayAvail.innerText = getAvail.value;
+        displayUmur.innerText = getUmur.value;
+        displayLoc.innerText = getLoc.value;
+        displayYear.innerText = getYear.value;
+        displayEmail.innerText = getEmail.value;
+      }
+    </script>
+</body>
+
+</html>
