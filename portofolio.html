@@ -57,7 +57,7 @@
               <div class="card-body">
                 <h5 class="card-title" id="displayName">Syifa Shintawati</h5>
                 <p class="card-text"><small class="text-body-secondary" id="displayRole">Back End Developer</small></p>
-                <a href="#" class="btn btn-primary btn-sm">Edit </a>
+                <a class="btn btn-primary btn-sm" onclick="edit()">Edit </a>
                 <a href="#" class="btn btn-outline-success btn-sm">Resume</a>
               </div>
             </div>
@@ -74,16 +74,16 @@
                 <td id="displayAvail">Full Time</td>
               </tr>
               <tr>
-                <td class="head">Usia</td>
-                <td id="displayUmur">21 Tahun</td>
+                <td class="head">Usia (Thn)</td>
+                <td id="displayUmur">21</td>
               </tr>
               <tr>
                 <td class="head">Lokasi</td>
                 <td id="displayLoc">Bandung, Indonesia</td>
               </tr>
               <tr>
-                <td class="head">Pengalaman</td>
-                <td id="displayYear">3 Tahun</td>
+                <td class="head">Pengalaman (Thn)</td>
+                <td id="displayYear" class="thn">3 </td>
               </tr>
               <tr>
                 <td class="head">Email</td>
@@ -160,6 +160,16 @@
         displayLoc.innerText = getLoc.value;
         displayYear.innerText = getYear.value;
         displayEmail.innerText = getEmail.value;
+      }
+
+      function edit(){
+        document.getElementById("name").setAttribute('value','Syifa Shintawati');
+        document.getElementById("role").setAttribute('value','Back End Developer');
+        document.getElementById("avail").setAttribute('value','Full Time');
+        document.getElementById("umur").setAttribute('value','21');
+        document.getElementById("loc").setAttribute('value','Bandung, Indonesia');
+        document.getElementById("yerp").setAttribute('value','3');
+        document.getElementById("email").setAttribute('value','syifasintawati@gmail.com');
       }
     </script>
 </body>
