@@ -1,0 +1,58 @@
+/* general */
+
+
+.trackContainer {
+    margin: 10px auto 10px 600px;
+    padding: 10px 20px 20px 20px;
+    border: 1px solid darkgray;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+    width: 40%;
+    min-width: 600px;
+    height: 30%;
+}
+
+.marginTopBottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* COVID19 */
+.covidInput {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+}
+
+#countries {
+    margin-left: 20px;
+    width: 30%;
+}
+
+.mySeparator {
+    height: 0.5px;
+    width: 80%;
+    background-color: whitesmoke;
+}
+.jumbotron{
+    background-image: url(/assets/img/backGp.jpg);
+    background-size: cover;
+}
+.col-card__content{
+    padding-top: 20px;
+}
+h5.card-title{
+    text-align: center;
+}
+p.card-text{
+    text-align: center;
+}
+.card-img-top{
+    margin-top: 10px;
+    width: 30px;
+}
+#span{
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+}
